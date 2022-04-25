@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pierre's JSON Converter</title>
+    <meta name="description" content="A JSON Converter by a newbie JS programmer">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
+    <link rel="stylesheet" href="assets/css/pikaday-1.6.1.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient" style="color: rgb(255, 255, 255);">
+        <div class="container"><a class="navbar-brand logo" href="#">Pierre's JSON Converter</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarNav"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto"></ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page projets-page">
+        <section class="project-no-images">
+            <div class="container">
+                <div class="heading"></div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>双列表格转元素</h3><textarea id="convertDoubleCols2JSONElements" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary copy-button" id="convertDoubleCols2JSONElements" type="button" data-clipboard-target="#convertDoubleCols2JSONElements_span">转换并拷贝到剪贴板<br></button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convertDoubleCols2JSONElements_span">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>多列表格转双列列表</h3><textarea id="convert2DoubleCols" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="convert2DoubleCols" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convert2DoubleCols">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>多行多列表格转JSON</h3><textarea id="convert2Table" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="convert2Table" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convert2Table">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>表单大师字段列表转JSON</h3><textarea id="jsformFields2Table" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary copy-button" id="jsformFields2Table" type="button" data-clipboard-target="#jsformFields2Table_span">转换并拷贝到剪贴板<br></button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="jsformFields2Table_span">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>多行多列薪酬级别转JSON</h3><textarea id="convertSalaryTable" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary copy-button" id="convertSalaryTable" type="button" data-clipboard-target="#convertSalaryTable_span">转换并拷贝到剪贴板<br></button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convertSalaryTable_span">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>单列表格转元素</h3><textarea id="convert2JSONElements" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="convert2JSONElements" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convert2JSONElements">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>单列表格转特定分隔</h3><textarea id="convert2SlightPause" class="border-light" style="width: 342px;"></textarea><input type="text" id="convert2SlightPause" value="、"><button class="btn btn-primary" id="convert2SlightPause" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convert2SlightPause">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>标题首字母大写</h3><textarea id="capitalizeTitles" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="capitalizeTitles" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="capitalizeTitles">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>图片组HTML重整</h3><textarea id="reAllocateImages" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="reAllocateImages" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="reAllocateImages">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>汇率表转JSON</h3><textarea id="convertXRateTable" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="convertXRateTable" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convertXRateTable">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>国家城市补贴表转JSON</h3><textarea id="convertCountryCityAllowanceTable" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="convertCountryCityAllowanceTable" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convertCountryCityAllowanceTable">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>单列数据删重</h3><textarea id="duplicatedDataRemover" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="duplicatedDataRemover" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="duplicatedDataRemover">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>多列数据删重</h3><textarea id="multiColsDuplicatedDataRemover" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary" id="multiColsDuplicatedDataRemover" type="button">转换</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="multiColsDuplicatedDataRemover">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>RGB颜色转换</h3><input type="text" id="R_color" value="Red" style="width:20%"><input type="text" id="G_color" value="Green" style="width:20%"><input type="text" id="B_color" value="Blue" style="width:20%"><button class="btn btn-primary" id="RGB2HEX" type="button">转换</button>
+                            <p>通过颜色选择器选择：<input type="color" id="RGB2HEX" onchange="color2HEX(this.id)"></p>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>你输入的颜色用16进制表示为：<span id="RGB2HEX">……</span></p>
+                                </div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>PDF拷贝文字拼接成行</h3><textarea id="pdfTextJoin" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary copy-button" id="pdfTextJoin" type="button" data-clipboard-target="#pdfTextJoin_span">转换并拷贝到剪贴板</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="pdfTextJoin_span">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>Excel转Wiki表格</h3><textarea id="excel2wiki" class="border-light" style="width: 342px;"></textarea><span>题注（选填）</span><input type="text" id="excel2wiki_caption" style="width:70%"><button class="btn btn-primary copy-button" id="excel2wiki" data-clipboard-target="#excel2wiki_result_span">转换并拷贝到剪贴板</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="excel2wiki_result_span">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>多列表格左右旋转</h3><textarea id="table_rotate" class="border-light" style="width: 342px;"></textarea><select id="table_rotate_direction">
+                                <option value="left" selected="">左旋</option>
+                                <option value="right">右旋</option>
+                            </select><button class="btn btn-primary copy-button" id="table_rotate" data-clipboard-target="#table_rotate_result_span">转换并拷贝到剪贴板</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="table_rotate_result_span">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>多列表格转二维数组<br></h3><textarea id="convert22DArray" class="border-light" style="width: 342px;"></textarea><button class="btn btn-primary copy-button" id="convert22DArray" data-clipboard-target="#convert22DArray_result_span">转换并拷贝到剪贴板</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body"><span id="convert22DArray_result_span">……</span></div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>试验田<br></h3><button class="btn btn-primary copy-button" id="downloadFile-1">下载</button>
+                            <div class="card"></div>
+                            <div class="card"></div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>Natural Gas换算<br></h3>
+                            <p>$&nbsp;<input type="text" id="price_per_MMBtu" style="width: 150px;" value="5.6" onchange="LNGConvert(this.id, $(this).val())">/MMBtu / 百万英热单价</p>
+                            <p>&nbsp;<input type="text" id="MMBtu" style="width: 150px;" value="1" onchange="LNGConvert(this.id, $(this).val())">MMBtu / 百万英热</p>
+                            <p>&nbsp;<input type="text" id="cbm" style="width: 150px;" value="28.021135208008" onchange="LNGConvert(this.id, $(this).val())">cbm / 方（NG）</p>
+                            <p>&nbsp;<input type="text" id="e4cbm" style="width: 150px;" value="0.0028021135208008" onchange="LNGConvert(this.id, $(this).val())">1e4 cbm / 万方（NG）</p>
+                            <p>&nbsp;<input type="text" id="MMSCF" style="width: 150px;" value="0.0009699623725849" onchange="LNGConvert(this.id, $(this).val())">MMSCF(D) /&nbsp;百万立方英尺（NG）<br></p>
+                            <p>&nbsp;<input type="text" id="e4MT" style="width: 150px;" value="0.020301312457499" onchange="LNGConvert(this.id, $(this).val())">1e4 MT / 万吨（LNG）</p>
+                            <p>&nbsp;<span id="lng_volume">LNGvolume</span>&nbsp;e4cbm / 万方（LNG，0.45密度估）</p>
+                            <p>$&nbsp;&nbsp;<span id="total_price">Total Price</span>/ 总价</p>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="project-card-no-image">
+                            <h3>进口税额计算<br></h3>
+                            <p>报关价格&nbsp;<input type="text" id="original_price" style="width: 150px;"></p>
+                            <p>关税税率<input type="text" id="custom_duty_rate" style="width: 80px;" value="15%">消费税率<input type="text" id="consumption_tax_rate" style="width: 80px;" value="30%">&nbsp;</p>
+                            <p>增值税率<input type="text" id="VAT_rate" style="width: 80px;" value="17%">&nbsp;</p><button class="btn btn-primary copy-button" id="import_calculation">计算</button>
+                            <div class="card"></div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>该商品关税=报关价×关税税率=<span id="custom_duty">（关税）</span><br>消费税=(报关价+关税)÷(1-消费税率)×消费税率=<span id="consumption_tax">（消费税）</span><br>增值税=(报关价+关税+消费税)×增值税税率=<span id="VAT">（增值税）</span><br>该商品总价=报关价格+关税+消费税+增值税=<span id="overall_price">（总价）</span><br>综合税率=(关税税率+增值税税率+消费税税率+ (关税税率×增值税率))÷(1-消费税税率)=<span id="overall_rate">（综合税率）</span></p>
+                                </div>
+                            </div>
+                            <div class="tags"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="project-card-no-image">
+                            <h3>Word自定义文档部件及属性</h3>
+                            <p>将需要自定义的属性列在下格中，以<span class="fw-bold" style="color:red">半角逗号（,）</span>分隔，例如“承包商,业主”。<input type="text" id="customProperties"></p><button class="btn btn-primary" id="customProperties" type="button">生成Custom_Properties.xml</button><button class="btn btn-primary" id="customContentType" type="button">生成Custom_ContentType.xml</button>
+                            <p>请在docx文件中“开发工具”-“XML映射窗格”-“自定义XML部件”-“（添加新部件…）”中分两次<span class="fw-bold" style="color:red">先后</span>导入生成的Custom_Properties.xml和Custom_ContentType.xml，然后即可在“插入”-“文档部件”-“文档属性”中看到新建的自定义文档属性了。如果看不到说明导入顺序错误，保存该文件并重新打开就可以了。&nbsp;<br></p>
+                            <div class="tags"></div>
+                        </div><img src="assets/img/备案图标.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer"></footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/clipboard.min.js"></script>
+    <script src="assets/js/pikaday-1.6.1.min.js"></script>
+    <script src="assets/js/FileSaver.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/function.js"></script>
+</body>
+
+</html>
